@@ -53,7 +53,7 @@ int main()
         rad = rad + ((drad_k1+2*drad_k2+2*drad_k3+drad_k4)/6)*H;
         speed = speed + ((dspeed_k1+2*dspeed_k2+2*dspeed_k3+dspeed_k4)/6)*H;
 
-        /* 3. 時刻 (t)と位置 (rad), 速度 (speed)を出力するコードを追加する.*/
+        /* 3. 時刻 (t)と位置 (rad), 速度 (speed)を出力する*/
         /* 予め設定した"pendulum.csv"に保存する. */
         fprintf(fp,"%f,%f,%f\n",(double)t*H,rad,speed);
     }
